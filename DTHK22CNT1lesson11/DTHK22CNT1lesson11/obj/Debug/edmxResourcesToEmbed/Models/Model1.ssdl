@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DTH_K22CNT1Lesson11Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DthUsers">
+    <Key>
+      <PropertyRef Name="DthID" />
+    </Key>
+    <Property Name="DthID" Type="int" Nullable="false" />
+    <Property Name="DthUsersName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DthPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="DthFullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DthAge" Type="int" />
+    <Property Name="DthEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="DthPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="DthStatus" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="DTH_K22CNT1Lesson11ModelStoreContainer">
+    <EntitySet Name="DthUsers" EntityType="Self.DthUsers" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

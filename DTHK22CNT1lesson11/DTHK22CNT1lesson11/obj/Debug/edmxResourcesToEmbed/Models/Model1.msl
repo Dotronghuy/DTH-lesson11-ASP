@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DTH_K22CNT1Lesson11ModelStoreContainer" CdmEntityContainer="DTH_K22CNT1Lesson11Entities">
+    <EntitySetMapping Name="DthUsers">
+      <EntityTypeMapping TypeName="DTH_K22CNT1Lesson11Model.DthUser">
+        <MappingFragment StoreEntitySet="DthUsers">
+          <ScalarProperty Name="DthID" ColumnName="DthID" />
+          <ScalarProperty Name="DthUsersName" ColumnName="DthUsersName" />
+          <ScalarProperty Name="DthPassword" ColumnName="DthPassword" />
+          <ScalarProperty Name="DthFullName" ColumnName="DthFullName" />
+          <ScalarProperty Name="DthAge" ColumnName="DthAge" />
+          <ScalarProperty Name="DthEmail" ColumnName="DthEmail" />
+          <ScalarProperty Name="DthPhone" ColumnName="DthPhone" />
+          <ScalarProperty Name="DthStatus" ColumnName="DthStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

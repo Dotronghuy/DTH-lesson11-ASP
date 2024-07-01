@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DTH_K22CNT1Lesson11Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DthUser">
+    <Key>
+      <PropertyRef Name="DthID" />
+    </Key>
+    <Property Name="DthID" Type="Int32" Nullable="false" />
+    <Property Name="DthUsersName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DthPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DthFullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DthAge" Type="Int32" />
+    <Property Name="DthEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DthPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DthStatus" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="DTH_K22CNT1Lesson11Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DthUsers" EntityType="Self.DthUser" />
+  </EntityContainer>
+</Schema>
